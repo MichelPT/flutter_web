@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/pages/addData.dart';
 import 'package:flutter_web/subpages/partner_page.dart';
 import 'package:flutter_web/subpages/pet_page.dart';
 import 'package:get/get.dart';
@@ -40,7 +41,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pawrent'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: const Text('Pawrent'),
         bottom: TabBar(
           padding: EdgeInsets.only(right: 40.w),
           controller: _tabController,
@@ -50,7 +53,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           IconButton(
             onPressed: () => Get.snackbar(
                 'Informasi Akun', 'Berisi informasi mengenai akun anda'),
-            icon: Icon(Icons.account_circle),
+            icon: const Icon(Icons.account_circle),
             iconSize: 7.h,
           )
         ],
@@ -61,11 +64,22 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           final String label = e.text!.toLowerCase();
           return Center(
               child: label == 'home'
-                  ? HomeSubPage()
+                  ? const HomeSubPage()
                   : label == 'pet'
-                      ? PetSubPage()
-                      : PartnerSubPage());
+                      ? const PetSubPage()
+                      : const PartnerSubPage());
         }).toList(),
+      ),
+      floatingActionButton: ElevatedButton.icon(
+        onPressed: () => Get.to(() => AddData()),
+        icon: const Icon(
+          Icons.add,
+        ),
+        label: const Text('Add new animal!'),
+        style: ButtonStyle(
+            iconSize: MaterialStatePropertyAll(4.w),
+            shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30)))),
       ),
     );
   }

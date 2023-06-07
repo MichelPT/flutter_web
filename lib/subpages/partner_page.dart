@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class PartnerSubPage extends StatelessWidget {
@@ -19,7 +17,7 @@ class PartnerSubPage extends StatelessWidget {
           height: 10.h,
         ),
         TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20)))),
         )

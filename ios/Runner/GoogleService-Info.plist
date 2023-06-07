@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>628203833973-3n5bl4jkm0dce5bl70ug3lqbpn8h6aem.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.628203833973-3n5bl4jkm0dce5bl70ug3lqbpn8h6aem</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVJBPffSdH5G1BF8AA7YAx-ePLOBzCR9w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>628203833973</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterWeb</string>
+	<key>PROJECT_ID</key>
+	<string>pawrent-c325b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pawrent-c325b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:628203833973:ios:e9c13a1b0568f22aa6063c</string>
+	<key>DATABASE_URL</key>
+	<string>https://pawrent-c325b-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
